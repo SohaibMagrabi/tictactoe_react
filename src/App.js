@@ -12,8 +12,8 @@ const winComb = [
 ]
 function Square({ className, onClick, value }) {
   return (
-    <button className={`flex justify-center items-center border-zinc-100 h-32 w-32
-    hover:bg-zinc-50 active:scale-90 active:shadow-2xl transition-all rounded-x1 ${className}
+    <button className={`flex justify-center items-center border border-zinc-100 h-32 w-32
+    hover:bg-zinc-50 active:scale-90 active:shadow-2xl transition-all rounded-xl ${className}
     `} onClick={onClick}>
       {/*   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-14 h-14 fill-sky-600" >
         <path d=" M140 20C73 20 20 74 20 140c0 135 136 170 228 303 88-132 229-173 229-303 0-66-54-120-120-120-48 0-90 28-109 69-19-41-60-69-108-69z"/>
@@ -132,7 +132,7 @@ const Board = () => {
                   <span className="font-extrabold text-zinc-600">draws: {draw}</span>
                 </div>
               </div>
-              <div className="grid grid-cols-3 shadow-2xl rounded-xl relative overflow-hidden ">
+              <div className="grid grid-cols-3 shadow-2xl rounded-x1 relative overflow-hidden ">
 
                 {/* {renderSq(0)}
                {renderSq(1)}
